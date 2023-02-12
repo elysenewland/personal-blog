@@ -3,34 +3,16 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+Hey there! I'm Elyse, an occupational therapist learning to code.
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+After 7 years in school and 5 years of practice, I've found the U.S. healthcare system an intolerable place to work.
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+I loved my work as an OT, but the system continues to force unethical productivity standards, and companies provide less pay/worse benefits. Insurance companies constantly reduce patient visits and provide less coverage for care. The system sees dollars, not people.
 
-<div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
+It's why I'm studying to become a full-stack web developer.
 
-## Tech Stack
+Coding requires creative problem-solving and is both an art and a science, just like OT. I'm working towards becoming a full-stack developer and ready to learn more about web accessibility.
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+I'm excited to share my coding journey with you.
 
-## Features
-
-Here are certain features of this site.
-
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+Cheers to new adventures! 😊
