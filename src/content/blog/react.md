@@ -1,7 +1,7 @@
 ---
 title: "A High-Level Overview of React"
 author: Elyse Newland
-pubDatetime: 2023-02-24T16:42:51Z
+pubDatetime: 2023-02-23T11:42:51Z
 postSlug: react-overview
 featured: false
 draft: false
