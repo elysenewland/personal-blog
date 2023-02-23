@@ -19,10 +19,10 @@ React is a declarative programming library. I learn better with analogies, so he
 
 Declarative programming is like a chef knowing what a dish should look and taste like, putting the ingredients together, and letting the cooking process create the outcome. Compared to imperative programming, that same chef would work step-by-step through each recipe instruction, constantly checking if each step has been completed and if the dish is ready to be cooked.
 
-<!-- <video class="w-full h-auto" autoplay loop muted playsinline aria-describedby="video-caption">
+<video class="w-full h-auto" autoplay loop muted playsinline aria-describedby="video-caption">
     <source src="https://media.giphy.com/media/K7txBCu1lvLTW/giphy.mp4" type="video/mp4">
     <div id="video-caption" class="sr-only">The Swedish Chef from The Muppet Show cooking.</div>
-</video> -->
+</video>
 
 Essentially, declarative programming helps you work smarter, not harder! I like that.
 
@@ -36,19 +36,9 @@ It allows the programmer to focus on what the UI should be rather than how to up
 
 React sites are built with components which you can think of like Lego blocks. We put individual blocks together to create something amazing at the end.
 
-<video class="w-full h-auto" autoplay loop muted playsinline aria-describedby="video-caption">
-    <source src="https://media.giphy.com/media/l0JMrPWRQkTeg3jjO/giphy.mp4" type="video/mp4">
-    <div id="video-caption" class="sr-only">Loop of a red Lego block multiplying into many more and creating a larger red Lego block.</div>
-</video>
-
 In React, we can create reusable components. For example, let's say we want to create submit button, and it needs to live in two places on our site. We can create the component once and then use it wherever we need to throughout our site.
 
 Importantly, React components can also contain other components. This ability makes our code much more efficient and saves the programmer time. And if we name our components explicitly, this can decrease confusion when returning to the code or when someone new is reviewing it.
-
-<!-- <video class="w-full h-auto" autoplay loop muted playsinline aria-describedby="video-caption">
-    <source src="https://media.giphy.com/media/DMNPDvtGTD9WLK2Xxa/giphy.mp4" type="video/mp4">
-    <div id="video-caption" class="sr-only">Kevin from U.S. version of The Office stating, "Why waste time say lot word when few word do trick?</div>
-</video> -->
 
 ## JSX
 
@@ -56,22 +46,12 @@ JavaScript XML (JSX) is like a stricter HTML. However, it's not valid JS. You'll
 
 Importantly, JSX isn't required in our React apps. So why do we use it? If you're already familiar with HTML, it can make your site's development process much smoother and faster. While it's not exactly like HTML, it's close enough to be pretty intuitive.
 
-<video class="w-full h-auto" autoplay loop muted playsinline aria-describedby="video-caption">
-<source src="https://media.giphy.com/media/iggzinym5qVh4gLlGx/giphy.mp4" type="video/mp4">
-    <div id="video-caption" class="sr-only">Richard Hammond, previous co-host of Top Gear, sliding slowly down the hood of a car with his hand as it backs away.</div>
-</video>
-
 Writing JSX in React creates cleaner-looking code and spits back more helpful error messages, making it easier to debug.
 
 ## One-Way Data Flow
 
 In React, data flows from top to bottom. Data comes in the form of properties (props) and is transferred from parent to child but never from child to parent.
 The child will then either apply a change or pass it on to the next child.
-
-<video class="w-full h-auto" autoplay loop muted playsinline aria-describedby="video-caption">
-<source src="https://media.giphy.com/media/LUTttH88jx5Fr4gHfz/giphy.mp4" type="video/mp4">
-    <div id="video-caption" class="sr-only">Mother and son from the Goldbergs where the mother is booping her son's nose and he says, "Mom, please."</div>
-</video>
 
 Why is this helpful?
 
