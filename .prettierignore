@@ -12,5 +12,5 @@
 !.eslintrc.js
 !README.md
 
-# Ignore src/assets folder
-/src/assets
+# Ignore assets folder
+/public/assets

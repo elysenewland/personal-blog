@@ -3,7 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-<img class="mb-6 rounded-3xl" src="/src/assets/elyse-color-headshot.jpg" srcset="src/assets/elyse-color-headshot.jpg, src/assets/elyse-color-headshot@2x.jpg 2x" width="740" height="444" alt="Portrait of Elyse looking up outside on a warm summer day." loading="lazy">
+<img class="mb-6 rounded-3xl" src="/assets/elyse-color-headshot.jpg" srcset="/assets/elyse-color-headshot.jpg, /assets/elyse-color-headshot@2x.jpg 2x" width="740" height="444" alt="Portrait of Elyse looking up outside on a warm summer day." loading="lazy">
 
 Hey there! I'm Elyse, an occupational therapist learning to code.
 
