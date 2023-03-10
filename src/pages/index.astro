@@ -40,6 +40,15 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         </svg>
       </a> -->
 
+      <img
+        src="src/assets/elyse-bw-headshot.jpg"
+        srcset="src/assets/elyse-bw-headshot.jpg, src/assets/elyse-bw-headshot@2x.jpg 2x"
+        width="740"
+        height="444"
+        alt="Black and white portrait of Elyse smiling with her back against a textured metal wall."
+        loading="lazy"
+      />
+
       <p>
         I'm an Occupational Therapist leaving the broken U.S. healthcare system
         to become a full-stack developer. This blog is to help me synthesize
@@ -126,6 +135,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   }
   #hero .rss-icon {
     @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
+  }
+  #hero img {
+    @apply mb-6 rounded-3xl;
   }
   #hero p {
     @apply my-2;
