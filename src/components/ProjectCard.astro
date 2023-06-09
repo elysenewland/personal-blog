@@ -1,0 +1,63 @@
+---
+const { title, description, href, languages } = Astro.props;
+---
+
+<div class="project-card">
+  <svg
+    class="project-card-vector"
+    width="18"
+    height="18"
+    viewBox="0 0 18 18"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M4.22626 1.92462H16.0755M16.0755 1.92462L16.0755 13.7739M16.0755 1.92462L1.22626 16.7739"
+      stroke="white"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"></path>
+  </svg>
+  <li class="project-card-list">
+    <a href={href} class="project-card-link stretched-link">
+      <h3 class="project-card-h3">{title}</h3>
+      <p class="project-card-languages">{languages}</p>
+    </a>
+    <p>{description}</p>
+  </li>
+</div>
+
+<style>
+  .project-card {
+    @apply relative mb-5 rounded-[1.5rem] p-6;
+    background-color: hsla(0, 0%, 100%, 0.03);
+  }
+
+  .project-card-vector {
+    @apply absolute top-0 right-0 mt-6 mr-6;
+    width: 1.04rem;
+    height: 1.31rem;
+  }
+
+  .project-card-list {
+    @apply list-none;
+  }
+
+  .project-card-link {
+    @apply inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0;
+  }
+
+  .stretched-link::after {
+    @apply absolute inset-0 z-10;
+    content: "";
+  }
+
+  .project-card-h3 {
+    @apply text-lg font-medium decoration-dashed hover:underline;
+  }
+
+  .project-card-languages {
+    @apply mb-3 text-sm;
+    color: hsla(210, 3%, 76%, 1);
+  }
+</style>

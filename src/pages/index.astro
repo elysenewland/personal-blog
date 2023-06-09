@@ -5,6 +5,7 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
+import ProjectCard from "@components/ProjectCard.astro";
 import Card from "@components/Card";
 import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
@@ -50,11 +51,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       />
 
       <p>
-        I'm an Occupational Therapist leaving the broken U.S. healthcare system
-        to become a full-stack developer. This blog is to help me synthesize
-        what I'm learning, share my experiences, and hopefully help others along
-        the way. I'm always looking for folks to talk shop with and learn from.
-        Reach out and say hello 🙂
+        I’m a former Occupational Therapist who left the broken U.S. healthcare
+        system to become a Web Developer. Check out my featured projects to see
+        what I’ve been working on and blog posts where I share my experiences
+        and what I’m learning. I'm always looking for folks to talk shop with
+        and learn from. Reach out and say hello 🙂
       </p>
 
       {
@@ -67,7 +68,6 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         )
       }
     </section>
-
     <Hr />
 
     {
@@ -89,6 +89,38 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         </>
       )
     }
+
+    <section id="featured-projects">
+      <h2>Featured Projects</h2>
+      <ProjectCard
+        title="FaceFinder"
+        href="https://facefinder-gycy.onrender.com/"
+        description="A full-stack app that allows users to register/sign in, submit image links, and returns the images with bounding boxes around any faces."
+        languages="HTML, CSS, Javascript, React, Node, Express, PostgreSQL"
+      />
+
+      <ProjectCard
+        title="That's What The Office Said"
+        href="https://thats-what-the-office-said.vercel.app/"
+        description="A web app that display random quotes from the hit TV show 'The Office' using JSON files for quotes and character data."
+        languages="HTML, CSS, Javascript, Vue"
+      />
+
+      <ProjectCard
+        title="Robofriends"
+        href="https://robofriends-gules.vercel.app/"
+        description="A web app that enables users to search their robot friends by name. Built with React."
+        languages="HTML, CSS, Javascript, React"
+      />
+
+      <ProjectCard
+        title="Kitchen Copilot"
+        href="https://github.com/elysenewland/kitchen-copilot"
+        description="Final project for CS50. Allows users to search for recipes based on ingredients they already have."
+        languages="HTML, CSS, Javascript, Svelte"
+      />
+    </section>
+    <Hr />
 
     <section id="recent-posts">
       <h2>Recent Posts</h2>
@@ -151,12 +183,18 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
   /* ===== Featured & Recent Posts Sections ===== */
   #featured,
+  #featured-projects,
   #recent-posts {
     @apply pt-12 pb-6;
   }
   #featured h2,
+  #featured-projects h2,
   #recent-posts h2 {
     @apply text-2xl font-semibold tracking-wide;
+  }
+
+  #featured-projects h2 {
+    @apply mb-10;
   }
   .all-posts-btn-wrapper {
     @apply my-8 text-center;
